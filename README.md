@@ -33,6 +33,52 @@ Attributter:
 
 
 
+Vi valgte at lave nogle veje hvor der kørte biler frem og tilbage. Dem lavede vi først ved at finde nogle sprites som billeder.
+car1_filename = 'car1.png'
+car2_filename = 'car2.png'
+car3_filename = 'car3.png'
+car4_filename = 'car4.png'
+car5_filename = 'car5.png'
+sprite_car1 = pygame.image.load(car1_filename).convert_alpha()
+sprite_car2 = pygame.image.load(car2_filename).convert_alpha()
+sprite_car3 = pygame.image.load(car3_filename).convert_alpha()
+sprite_car4 = pygame.image.load(car4_filename).convert_alpha()
+sprite_car5 = pygame.image.load(car5_filename).convert_alpha()
+
+Efter det lavede vi dem så til enemies, og fik dem til at køre til højre og venstre på de stedder hvor det matchede baggrunden.
+
+def createEnemys(list,enemys,game):
+    for i, tick in enumerate(list):
+        list[i] = list[i] - 1
+        if tick <= 0:
+            if i == 0:
+                list[0] = (40*game.speed)/game.level
+                position_init = [-55,436]
+                enemy = Enemy(position_init,sprite_car1,"right",1)
+                enemys.append(enemy)
+            elif i == 1:
+                list[1] = (30*game.speed)/game.level
+                position_init = [506, 397]
+                enemy = Enemy(position_init,sprite_car2,"left",2)
+                enemys.append(enemy)
+            elif i == 2:
+                list[2] = (40*game.speed)/game.level
+                position_init = [-80, 357]
+                enemy = Enemy(position_init,sprite_car3,"right",2)
+                enemys.append(enemy)
+            elif i == 3:
+                list[3] = (30*game.speed)/game.level
+                position_init = [516, 318]
+                enemy = Enemy(position_init,sprite_car4,"left",1)
+                enemys.append(enemy)
+            elif i == 4:
+                list[4] = (50*game.speed)/game.level
+                position_init = [-56, 280]
+                enemy = Enemy(position_init,sprite_car5,"right",1)
+                enemys.append(enemy)
+
+
+
 
 *Dokumentation af salve programmet*:
 
