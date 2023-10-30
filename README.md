@@ -8,6 +8,29 @@ Vi har lavet et Frogger spil, som går ud på at man er en frø som skal hoppe o
 
 
 *Funktionsbeskrivelse*:
+class Frog(Object):
+    def __init__(self,position,sprite_frog):
+        self.sprite = sprite_frog
+        self.position = position
+        self.lives = 3
+        self.animation_counter = 0
+        self.animation_tick = 1
+        self.way = "UP"
+        self.can_move = 1
+
+Parametre:
+    - position (tuple): En tuple, der repræsenterer frøets startposition.
+    - sprite_frog: Sprite, der er forbundet med frøet.
+
+Attributter:
+    - sprite: Sprite, der er forbundet med frøet.
+    - position (tuple): Frøets nuværende position på spilskærmen.
+    - lives (int): Antallet af liv, som frøet har i spillet (sat som standard til 3).
+    - animation_counter (int): En tæller, der bruges til at spore animationsrelaterede handlinger.
+    - animation_tick (int): En tælletakt for animationopdateringer.
+    - way (str): Retningen, hvori frøet vender (sat som standard til "OP").
+    - can_move (int): En markør, der angiver, om frøet i øjeblikket kan bevæge sig.
+
 
 
 
@@ -17,6 +40,7 @@ Vi har lavet et Frogger spil, som går ud på at man er en frø som skal hoppe o
 
 *Beskrivelse af udviklingsprocessen*:
 Vi havde store problemer med at committe ind til github, og er også blevet nødt til at lave et nyt respository, så vi har noget dokumentation af vores udviklinsprocces. Vi valgte bare at lave videre på vores kode, og så bare uploade den til sidst.
+
 
 
 
