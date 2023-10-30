@@ -8,6 +8,7 @@ Vi har lavet et Frogger spil, som går ud på at man er en frø som skal hoppe o
 
 
 *Funktionsbeskrivelse*:
+```
 class Frog(Object):
 
     def __init__(self,position,sprite_frog):
@@ -36,7 +37,7 @@ Attributter:
 
 Vi valgte at lave nogle veje hvor der kørte biler frem og tilbage. Dem lavede vi først ved at finde nogle sprites som billeder.
 
-```
+
 car1_filename = 'car1.png'
 car2_filename = 'car2.png'
 car3_filename = 'car3.png'
@@ -127,7 +128,7 @@ def updateSprite(self,key_pressed):
                         self.position[0] = self.position[0]+14
 
 
-
+```
 *Dokumentation af salve programmet*:
 
 
