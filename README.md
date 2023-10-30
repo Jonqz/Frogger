@@ -78,6 +78,50 @@ def createEnemys(list,enemys,game):
                 enemys.append(enemy)
 
 
+Vi har lavet så man kan bevæge frøen med piletasterne. Her har vi altså skrevet hvilke knapper den skal bevæge sig med og hvor meget den skal bevæge sig med.
+
+def updateSprite(self,key_pressed):
+        if self.way != key_pressed:
+            self.way = key_pressed
+            if self.way == "up":
+                frog_filename = 'sprite_sheets_up.png'
+                self.sprite = pygame.image.load(frog_filename).convert_alpha()
+            elif self.way == "down":
+                frog_filename = 'sprite_sheets_down.png'
+                self.sprite = pygame.image.load(frog_filename).convert_alpha()
+            elif self.way == "left":
+                frog_filename = 'sprite_sheets_left.png'
+                self.sprite = pygame.image.load(frog_filename).convert_alpha()
+            elif self.way == "right":
+                frog_filename = 'sprite_sheets_right.png'
+                self.sprite = pygame.image.load(frog_filename).convert_alpha()
+
+
+    def moveFrog(self,key_pressed, key_up):
+         
+        if self.animation_counter == 0 :
+            self.updateSprite(key_pressed)
+        self.incAnimationCounter()
+        if key_up == 1:
+            if key_pressed == "up":
+                if self.position[1] > 39:
+                    self.position[1] = self.position[1]-13
+            elif key_pressed == "down":
+                if self.position[1] < 473:
+                    self.position[1] = self.position[1]+13
+            if key_pressed == "left":
+                if self.position[0] > 2:
+                    if self.animation_counter == 2 :
+                        self.position[0] = self.position[0]-13
+                    else:
+                        self.position[0] = self.position[0]-14
+            elif key_pressed == "right":
+                if self.position[0] < 401:
+                    if self.animation_counter == 2 :
+                        self.position[0] = self.position[0]+13
+                    else:
+                        self.position[0] = self.position[0]+14
+
 
 
 *Dokumentation af salve programmet*:
