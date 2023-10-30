@@ -131,6 +131,44 @@ def updateSprite(self,key_pressed):
 ```
 *Dokumentation af salve programmet*:
 
+Spillet Frogger
+
+Dette program implementerer et enkelt spil ved navn "Frogger". Spillet er en variant af det klassiske Frogger-arkadespil, hvor målet er at få en frø sikkert over en trafikeret vej og en flod.
+
+Overblik over koden
+
+Koden indeholder tre klasser: Frog, Enemy, og Platform, som repræsenterer forskellige objekter i spillet. Derudover er der en Game-klasse, der styrer spillets tilstand, og en række hjælpefunktioner og variabler til at håndtere spillogikken.
+
+Klasser
+
+Object: En grundlæggende klasse for spilobjekter. Den indeholder metoder til at tegne objektet på skærmen og oprette et rektangel for kollision.
+
+Frog: En underklasse af Object, der repræsenterer frøet i spillet. Frøet har egenskaber som liv, animation og retning. Der er metoder til at håndtere frøets bevægelse og animation.
+
+Enemy: En underklasse af Object, der repræsenterer fjendtlige biler i spillet. Disse fjender bevæger sig enten til højre eller venstre over vejen. Der er en metode til at flytte fjenderne.
+
+Platform: En underklasse af Object, der repræsenterer platforme i floden, som frøet kan bruge til at krydse floden sikkert. Platformerne kan også bevæge sig til højre eller venstre.
+
+Game: En klasse til styring af spiltilstanden. Den indeholder oplysninger om spilhastighed, niveau, point og tid. Der er metoder til at øge niveauet, hastigheden, pointene og reducere tiden.
+
+Spillogik
+
+Spillogikken omfatter bevægelse af frøet, fjender og platforme, kollisionstjek, pointtælling og overgang til næste niveau. Frøet har en begrænset tid til at krydse vejen og floden sikkert.
+
+Brugergrænseflade
+
+Spillet indeholder en simpel brugergrænseflade, hvor spillet starter med en velkomstbesked. Når spillet er i gang, vises spiloplysninger som niveau, point og tid i øverste hjørne af skærmen. Når spillet er slut, vises en besked med resultatet, og spillet kan genstartes ved at trykke på en vilkårlig tast.
+
+Spilcyklus
+
+Spilcyklussen kører konstant og opdaterer spiltilstanden og tegner spilobjekterne på skærmen. Spillet fortsætter, indtil frøet er løbet tør for liv.
+
+Afslutning af spillet
+
+Spillet slutter, når frøet er løbet tør for liv. Resultatet vises, og spillet kan genstartes ved at trykke på en tast.
+
+Dette er en oversigt over strukturen og funktionaliteten i dit "Frogger" spil. Spillet indeholder grundlæggende elementer som bevægelse, kollisionstjek og pointtælling, der er typiske for denne type arkadespil. Du kan tilpasse og udvide spillet efter behov for at tilføje flere niveauer, fjender og funktioner.
+
 
 
 *Beskrivelse af udviklingsprocessen*:
