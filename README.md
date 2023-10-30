@@ -129,11 +129,11 @@ def updateSprite(self,key_pressed):
 
 
 ```
-*Dokumentation af salve programmet*:
+*Dokumentation af selve programmet*:
 
-Spillet Frogger
+Frogger
 
-Dette program implementerer et enkelt spil ved navn "Frogger". Spillet er en variant af det klassiske Frogger-arkadespil, hvor målet er at få en frø sikkert over en trafikeret vej og en flod.
+Spillet er en variant af det klassiske Frogger-arkadespil, hvor målet er at få en frø sikkert over en trafikeret vej og en flod.
 
 Overblik over koden
 
@@ -166,9 +166,6 @@ Spilcyklussen kører konstant og opdaterer spiltilstanden og tegner spilobjekter
 Afslutning af spillet
 
 Spillet slutter, når frøet er løbet tør for liv. Resultatet vises, og spillet kan genstartes ved at trykke på en tast.
-
-Dette er en oversigt over strukturen og funktionaliteten i dit "Frogger" spil. Spillet indeholder grundlæggende elementer som bevægelse, kollisionstjek og pointtælling, der er typiske for denne type arkadespil. Du kan tilpasse og udvide spillet efter behov for at tilføje flere niveauer, fjender og funktioner.
-
 
 
 *Beskrivelse af udviklingsprocessen*:
