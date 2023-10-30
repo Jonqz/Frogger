@@ -1,4 +1,4 @@
-Jonas og Jakob 2.P.
+Jonas og Jakob 2.P på Sukkertoppen.
 Spil lavet i Python med brug af Pygame.
 Vi har brugt Visual Code Studio til at kode.
 
