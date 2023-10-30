@@ -9,6 +9,7 @@ Vi har lavet et Frogger spil, som går ud på at man er en frø som skal hoppe o
 
 *Funktionsbeskrivelse*:
 class Frog(Object):
+
     def __init__(self,position,sprite_frog):
         self.sprite = sprite_frog
         self.position = position
@@ -19,10 +20,12 @@ class Frog(Object):
         self.can_move = 1
 
 Parametre:
+
     - position (tuple): En tuple, der repræsenterer frøets startposition.
     - sprite_frog: Sprite, der er forbundet med frøet.
 
 Attributter:
+
     - sprite: Sprite, der er forbundet med frøet.
     - position (tuple): Frøets nuværende position på spilskærmen.
     - lives (int): Antallet af liv, som frøet har i spillet (sat som standard til 3).
@@ -31,9 +34,9 @@ Attributter:
     - way (str): Retningen, hvori frøet vender (sat som standard til "OP").
     - can_move (int): En markør, der angiver, om frøet i øjeblikket kan bevæge sig.
 
-
-
 Vi valgte at lave nogle veje hvor der kørte biler frem og tilbage. Dem lavede vi først ved at finde nogle sprites som billeder.
+
+```
 car1_filename = 'car1.png'
 car2_filename = 'car2.png'
 car3_filename = 'car3.png'
@@ -79,6 +82,7 @@ def createEnemys(list,enemys,game):
 
 
 Vi har lavet så man kan bevæge frøen med piletasterne. Her har vi altså skrevet hvilke knapper den skal bevæge sig med og hvor meget den skal bevæge sig med.
+
 
 def updateSprite(self,key_pressed):
         if self.way != key_pressed:
