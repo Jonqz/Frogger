@@ -128,11 +128,10 @@ def updateSprite(self,key_pressed):
                         self.position[0] = self.position[0]+14
 
 
-```
+``
 *Dokumentation af selve programmet*:
 
 Frogger
-
 Spillet er en variant af det klassiske Frogger-arkadespil, hvor målet er at få en frø sikkert over en trafikeret vej og en flod.
 
 Overblik over koden
@@ -140,7 +139,6 @@ Overblik over koden
 Koden indeholder tre klasser: Frog, Enemy, og Platform, som repræsenterer forskellige objekter i spillet. Derudover er der en Game-klasse, der styrer spillets tilstand, og en række hjælpefunktioner og variabler til at håndtere spillogikken.
 
 Klasser
-
 Object: En grundlæggende klasse for spilobjekter. Den indeholder metoder til at tegne objektet på skærmen og oprette et rektangel for kollision.
 
 Frog: En underklasse af Object, der repræsenterer frøet i spillet. Frøet har egenskaber som liv, animation og retning. Der er metoder til at håndtere frøets bevægelse og animation.
@@ -152,19 +150,15 @@ Platform: En underklasse af Object, der repræsenterer platforme i floden, som f
 Game: En klasse til styring af spiltilstanden. Den indeholder oplysninger om spilhastighed, niveau, point og tid. Der er metoder til at øge niveauet, hastigheden, pointene og reducere tiden.
 
 Spillogik
-
 Spillogikken omfatter bevægelse af frøet, fjender og platforme, kollisionstjek, pointtælling og overgang til næste niveau. Frøet har en begrænset tid til at krydse vejen og floden sikkert.
 
 Brugergrænseflade
-
 Spillet indeholder en simpel brugergrænseflade, hvor spillet starter med en velkomstbesked. Når spillet er i gang, vises spiloplysninger som niveau, point og tid i øverste hjørne af skærmen. Når spillet er slut, vises en besked med resultatet, og spillet kan genstartes ved at trykke på en vilkårlig tast.
 
 Spilcyklus
-
 Spilcyklussen kører konstant og opdaterer spiltilstanden og tegner spilobjekterne på skærmen. Spillet fortsætter, indtil frøet er løbet tør for liv.
 
 Afslutning af spillet
-
 Spillet slutter, når frøet er løbet tør for liv. Resultatet vises, og spillet kan genstartes ved at trykke på en tast.
 
 
